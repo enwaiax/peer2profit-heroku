@@ -11,7 +11,7 @@ app = Flask(__name__)
 def hello():
     ip = get('https://api.ipify.org').text
     with open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"test.log")) as f:
-        message = f.readlines()[-5:]
+        message = f.readlines()
     return f"Hello from {ip}!"  + '<br>' + '<br>'.join(message)
 
 if __name__ == '__main__':
