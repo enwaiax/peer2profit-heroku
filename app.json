@@ -5,11 +5,11 @@
 	"env": {
 		"email": {
 			"description": "peer2profit email",
-			"value": "test@example.com",
+			"value": "chasing66@live.com",
             "required": true
 		}
 	},
 	"website": "https://github.com/Chasing66/peer2profit",
-	"repository": "https://github.com/Chasing66/peer2profit",
+	"repository": "https://github.com/Chasing66/peer2profit-heroku",
 	"stack": "container"
 }
