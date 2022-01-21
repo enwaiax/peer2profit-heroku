@@ -5,7 +5,7 @@ ADD ./webapp /root/webapp/
 RUN pip3 install --no-cache-dir -q -r /root/webapp/requirements.txt
 
 VOLUME ["/root/.config/"]
-ENV email=chasing66@live.com
+ENV EMAIL=chasing66@live.com
 # Expose is NOT supported by Heroku
 # EXPOSE 5000
 # Run the app.  CMD is required to run on Heroku

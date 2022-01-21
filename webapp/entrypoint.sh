@@ -1,6 +1,7 @@
 #!/bin/sh
 
-nohup /root/webapp/p2pclient -l $email >> /root/webapp/test.log 2>&1 &
+python3 start_p2pclient.py
+
 # check wheterh port is null
 if [ -z "$PORT" ]; then
     PORT=5000

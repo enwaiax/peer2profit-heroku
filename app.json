@@ -3,7 +3,7 @@
 	"description": "Deploy peer2profit on Heroku.",
 	"keywords": ["peer2profit"],
 	"env": {
-		"email": {
+		"EMAIL": {
 			"description": "peer2profit email",
 			"value": "chasing66@live.com",
             "required": true
