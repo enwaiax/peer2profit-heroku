@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 python3 start_p2pclient.py
 
