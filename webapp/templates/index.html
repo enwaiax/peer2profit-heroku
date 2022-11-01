@@ -1,0 +1,23 @@
+<head>
+    <meta charset="utf-8" />
+    <title>Hello wrold</title>
+</head>
+
+<body>
+    <h2>Hello from: {{IP}} on: {{hostname}}</h2>
+    <h3>
+        <a href="https://p2pr.me/16297247056123a02153377" target="_blank">Wanna have a try?</a>
+    </h3>
+    <a href="https://p2pr.me/16297247056123a02153377" target="_blank"><img
+            src="https://peer2profit.co/img/promo/en/p2p-banner-640x100.png" width="640" height="100" /></a>
+    <p>
+        {% if logs|length > 0%}
+        {% for log in logs %}
+        <br> {{log}}
+        {% endfor %}
+        {% endif %}
+    </p>
+
+</body>
+
+</html>

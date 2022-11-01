@@ -21,3 +21,5 @@ bin-release/
 env/
 p2pclient
 test.log
+.venv/
+__pycache__/
