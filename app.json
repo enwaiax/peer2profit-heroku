@@ -1,15 +1,15 @@
 {
-	"name": "peer2profit",
-	"description": "Deploy peer2profit on Heroku.",
-	"keywords": ["peer2profit"],
-	"env": {
-		"EMAIL": {
-			"description": "peer2profit email",
-			"value": "chasing66@live.com",
-            "required": true
-		}
-	},
-	"website": "https://github.com/Chasing66/peer2profit",
-	"repository": "https://github.com/Chasing66/peer2profit-heroku",
-	"stack": "container"
+  "name": "peer2profit",
+  "description": "Deploy peer2profit on Heroku.",
+  "keywords": ["peer2profit"],
+  "env": {
+    "EMAIL": {
+      "description": "peer2profit email",
+      "value": "chasing66@live.com",
+      "required": true
+    }
+  },
+  "website": "https://github.com/Chasing66/peer2profit",
+  "repository": "https://github.com/Chasing66/peer2profit-heroku",
+  "stack": "container"
 }

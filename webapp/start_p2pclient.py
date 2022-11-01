@@ -9,7 +9,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 P2P_CLIENT_PATH = "/usr/bin/p2pclient"
 p2p_log_path = os.path.join(current_dir, "test.log")
 
-ip = requests.get('https://api.ipify.org').text
+ip = requests.get('https://ipinfo.io').json()['ip']
 
 # check whether p2pclient is under path /usr/bin/
 if not os.path.exists(P2P_CLIENT_PATH):

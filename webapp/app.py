@@ -2,7 +2,7 @@ import os
 import socket
 
 from flask import Flask
-from requests import get
+import requests
 
 app = Flask(__name__)
 
@@ -13,7 +13,7 @@ CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 def hello():
     '''Nothing but hello'''
     hostname = socket.gethostname()
-    IP = get('https://api.ipify.org').text
+    IP = requests.get('https://ipinfo.io').json()['ip']
     with open(os.path.join(CURRENT_DIR, "test.log"), encoding='utf_8') as f:
         message = f.readlines()[-20:]
     return f"""
@@ -28,7 +28,7 @@ def hello():
 <body>
     <h2>Hello from: {IP} on: {hostname}</h2>
     <h3>
-        <a href="https://p2pr.me/16297247056123a02153377" target="_blank">Want to give it a try??</a>
+        <a href="https://p2pr.me/16297247056123a02153377" target="_blank">Wanna have a try?</a>
     </h3>
     <a href="https://p2pr.me/16297247056123a02153377" target="_blank"><img
             src="https://peer2profit.co/img/promo/en/p2p-banner-640x100.png" width="640" height="100" /></a>
